@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <h1>Movie Api</h1>
+    <p>Here's a list of the routes</p>
+    <br><br>
+
+    <!--Movies-->
+    <h2>Movies</h2>
+    <h4>Get routes</h4>
+    <ul>
+        <li>Get all : /api/movies/</li>
+        <li>Get By Id : /api/movies/:movieId</li>
+    </ul>
+    <br>
+    <h4>Post routes</h4>
+    <ul>
+        <li>Create : /api/movies</li>
+        <li>Request body sample : {
+            "title" : "Osofia in london",
+            "releaseDate" : "06/06/2018",
+            "directorName" : "the russo brothers (goats)"
+        }</li>
+    </ul>
+    <br>
+    <h4>Patch routes</h4>
+    <ul>
+        <li>patch : /api/movies/:movieId</li>
+    </ul>
+    <br>
+    <h4>Delete routes</h4>
+    <ul>
+        <li>Delete : /api/movies/:movieId</li>
+    </ul>
+    <br><br>
+    <h2>Reviewer</h2>
+    <h4>Get routes</h4>
+    <ul>
+        <li>Get all : /api/reviewers/</li>
+        <li>Get By Id : /api/reviewers/:reviewerId</li>
+    </ul>
+    <br>
+    <h4>Post routes</h4>
+    <ul>
+        <li>Create : /api/reviewers</li>
+        <li>Request body sample : {
+            "name" : "raphael"
+        }
+        </li>
+    </ul>
+    <br>
+    <h4>Patch routes</h4>
+    <ul>
+        <li>patch : /api/movies/:reviewerId</li>
+    </ul>
+    <br>
+    <h4>Delete routes</h4>
+    <ul>
+        <li>Delete : /api/movies/:reviewerId</li>
+    </ul>
+    <br><br>
+    <h2>Review</h2>
+    <h4>Get routes</h4>
+    <ul>
+        <li>GetAll : /api/reviews/</li>
+        <li>Get Reviews of Movie : /api/reviews/getReviewsOfMovie/:movieId</li>
+        <li>Get Reviews of Reviewer : /api/reviews/getReviewsOfReviewer/:reviewerId</li>
+        <li>Get By Id: /api/reviews/reviewId</li>
+    </ul>
+    <br>
+    <h4>Post routes</h4>
+    <ul>
+        <li>Create : /api/reviews</li>
+        <li> Request Sample : {
+            "rating" : 5,
+            "description" : "good movie would recommend",
+            "movieId" : "62d29cb7e348330218b7b63a",
+            "reviewerId" : "62d29d424adb718034dc0f7b"
+        }</li>
+    </ul>
+    <br>
+    <h4>Patch routes</h4>
+    <ul>
+        <li>patch : /api/movies/:reviewId</li>
+    </ul>
+    <br>
+    <h4>Delete routes</h4>
+    <ul>
+        <li>Delete : /api/movies/:reviewId</li>
+    </ul>
+    <br><br>
+</body>
+
+</html>
